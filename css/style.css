@@ -1,0 +1,271 @@
+* {box-sizing: border-box;}
+
+
+header {
+   height: 100px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color:#FAB99F;
+   border-bottom: 3px solid #F2B197;
+}
+.hd{
+	font-family: Monotype Corsiva;
+	font-weight:bolder;
+	font-size:26px;
+	color:#8B3626;
+}
+body{
+	display: flex;
+	flex-direction: column;
+}
+.content {
+	display: flex;
+}
+
+article{
+	background-image:url(../resources/1q.png);
+	background-size: 100% 100%;
+	flex-grow: 3.75;
+	height: 1500px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 0 0 20px rgb(250, 140, 153);
+}
+legend{
+	position:absolute;
+	font-family:Monotype Corsiva;
+	font-size:28px;
+	color: #5f271a;
+	top:130px;
+}
+.name{
+	position:absolute;
+	font-weight:bolder;
+	font-size:20px;
+	color: #5f271a;
+	top:160px;
+	left:350px;
+}
+.text{
+	position:absolute;
+	font-weight:bolder;
+	font-size:20px;
+	color: #5f271a;
+	top:255px;
+	left:350px;
+	background-color:transparent;
+}
+.check{
+	position:absolute;
+	font-weight:bolder;
+	font-size:20px;
+	color: #5f271a;
+	top:345px;
+	left:350px;
+}
+.spisok{
+	position:absolute;
+	font-weight:bolder;
+	font-size:20px;
+	color: #5f271a;
+	top:630px;
+	left:350px;
+}
+.choice{
+	position:absolute;
+	font-weight:bolder;
+	font-size:20px;
+	color: #5f271a;
+	top:730px;
+	left:350px;
+}
+.price{
+	position:absolute;
+	font-weight:bolder;
+	font-size:20px;
+	color: #5f271a;
+	top:850px;
+	left:350px;
+	background-color:transparent;
+}
+input[type='range'] {
+	-webkit-appearance: none !important;
+	background:#5f271a;
+	height:10px;
+}
+input[type='range']::-webkit-slider-thumb {
+	-webkit-appearance: none !important;
+	background:sandybrown;
+	height: 15px;
+	width: 15px;
+}
+
+.photo {
+	position:absolute;
+	font-weight:bolder;
+	font-size:20px;
+	color: #5f271a;
+	top:990px;
+	left:350px;
+}
+
+.offer{
+	position:absolute;
+	font-weight:bolder;
+	font-size:20px;
+	color: #5f271a;
+	top:1120px;
+	left:350px;
+}
+
+nav {
+	background: #FFFFE0;
+	flex-grow: 1;
+	height: 1500px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.menu{
+	position:absolute;
+	right:320px;
+	top:120px;
+}
+.forli{
+	list-style-type: none;
+	font-family: Monotype Corsiva;
+	font-weight:bolder;
+	font-size:26px;
+	color:#8B3626;
+	padding: 3px;
+	width:200px;
+	background: linear-gradient(to top, #FFEBCD, #FFE4C4);
+	border-radius: 7px;
+}
+
+aside {
+	flex-grow: 1;
+	height: 1500px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background:#FFFFE0;
+}
+.sale{
+	position:absolute;
+	right:7px;
+	top:120px;
+}
+
+.img{
+	position:absolute;
+}
+.b1, .b2{
+	position:absolute;
+	font-weight:bolder;
+	font-size:20px;
+	color:#A52A2A;
+	top:1450px;
+	border-radius: 7px;
+	width:200px;
+	border-color:transparent;
+	background-color:transparent;
+}
+.b2{
+	right:550px;
+}
+.b1{
+	left:300px;
+}
+.b2:hover{
+	background-color:#F2B197;
+}
+.b1:hover{
+	background-color:#F2B197;
+}
+footer {
+	height: 150px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color:#FAB99F;
+	border-top: 3px solid #F2B197;
+}
+.help{
+	position:absolute;
+	left:260px;
+	font-family: Monotype Corsiva;
+	font-weight:bolder;
+	font-size:26px;
+	color:#8B3626;
+}
+
+.cop{
+	font-family: Monotype Corsiva;
+	font-weight:bolder;
+	font-size:26px;
+	color:#8B3626;
+	position:absolute;
+	right:240px;
+	width:300px;
+}
+select {
+	background: transparent;
+	border: 3px solid #8B7D6B;
+}
+
+p{
+	font-family:Sylfaen;
+	font-weight:900;
+	font-size:22px;
+}
+
+label, select{
+	font-family:Monotype Corsiva;
+	font-weight:300;
+}
+
+.sale{
+	position:absolute;
+	right:20px;
+	top:120px;
+}
+a:link {
+	text-decoration: none;
+}
+
+a{
+	color:#8B3626;
+}
+table {
+	position: absolute;
+	top:300px;
+	border: 2px solid #804000;
+	border-collapse: collapse ;
+	color: #4d2600;
+}
+td{
+	padding: 5px;
+	border: 2px solid #804000;
+	text-align: center;
+}
+ul{
+	position: absolute;
+	top:900px;
+}
+
+ol {
+	position: absolute;
+	margin-top: 90px;
+	color: #4d2600;
+	text-align: center;
+	font-size: 20px;
+}
+h1{
+	font-family: Monotype Corsiva;
+	font-weight:bolder;
+	font-size:26px;
+	color:#8B3626;
+}

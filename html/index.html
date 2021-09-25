@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Опрос посетителя ресторана</title>
+	<link  rel="stylesheet" type="text/css" href="../css/style.css" >
+	<link rel="shortcut icon" href="../resources/2.png" type="image/png">
+	<script src="index_script.js"></script>  
+</head>
+
+
+<header>
+  	<p class="hd">Опрос посетителя ресторана</p>
+</header>  
+
+<body>   
+  	<div class="content">
+
+        <article>
+
+           <legend>Вопросы:</legend>
+           <form action="#" onsubmit ="createPage()" method="GET"  >
+               <div class="name" >
+                   <p>1. Укажите Ваше имя (на русском языке):</p>
+                   <input type="text" size="40" name="name" id="name" maxlength="20" pattern="(^[А-Яа-яЁё\s]+$)" required>
+	       		</div>
+			   <div class="text"><p>2.Укажите Ваш возраст:</p>
+				   <input type="number" name="age" value="0" min="0" max="100" step="1">
+			   </div>
+				<div class="check">
+					<p>3. Ассортимент каких блюд необходимо расширить?:<br></p>
+					<label><input type = "checkbox" name = "range" id = "box1" value="Закуски">Закуски</label><Br>
+			        <label><input type = "checkbox" name = "range" id = "box2" value="Салаты">Салаты</label><Br>
+					<label><input type = "checkbox" name = "range" id = "box3" value="Супы">Супы</label><Br>
+					<label><input type = "checkbox" name = "range" id = "box4" value="Горячие блюда из мяса и птицы">Горячие блюда из мяса и птицы</label><Br>
+					<label><input type = "checkbox" name = "range" id = "box5" value="Рыба">Рыба</label><Br>
+					<label><input type = "checkbox" name = "range" id = "box6" value="Гарниры">Гарниры</label><Br>
+					<label><input type = "checkbox" name = "range" id = "box7" value="Пицца">Пицца</label><Br>
+					<label><input type = "checkbox" name = "range" id = "box8" value="Десерты">Десерты</label><Br>
+					<label><input type = "checkbox" name = "range" id = "box9" value="Напитки">Напитки</label><Br>
+				</div>
+
+                               <div class="spisok">
+                                   <p>4. Как часто Вы бываете в нашем ресторане?</p>
+                                   <select name="visit" id="sp">
+                                       <option hidden disabled selected ></option>
+                                       <option value = "1 раз в неделю" >1 раз в неделю</option>
+                                       <option value = "1 раз в 2 недели" >1 раз в 2 недели</option>
+                                       <option value = "1 раз в месяц" >1 раз в месяц</option>
+                                       <option value = "1 раз в 3 месяца" >1 раз в 3 месяца</option>
+                                       <option value = "1 раз в полгода" >1 раз в полгода</option>
+                                   </select>
+                               </div>
+
+			   <div class = "choice"><p>5. Довольны ли Вы обслуживанием в нашем ресторане?:</p>
+				   <label><input type = "radio" name = "radio" id="radio1" value="Доволен(а)">Доволен(а)</label><Br>
+				   <label><input type = "radio" name = "radio" id="radio2" value="Недоволен(а)">Недоволен(а)</label><Br>
+			   </div>
+
+			   <div class="price"><p>6.Укажите максимальную сумму, которую Вы готовы <br>потратить в нашем ресторане за одно посещение?:</p>
+				   <input type="range" name="rangeList"step="50" min="0" max="300" list="rangeList"  onchange="document.getElementById('rangeValue').innerHTML = this.value;">
+				   <datalist id="rangeList" >
+					   <option  id="rangeValue1" value="0" label="0">
+					   <option id="rangeList2" value="50" label="50">
+					   <option id="rangeList3" value="100" label="100">
+					   <option id="rangeList4" value="150" label="150">
+					   <option id="rangeList5" value="200" label="200">
+					   <option id="rangeList6" value="250" label="250">
+					   <option id="rangeList7" value="300" label="300">
+				   </datalist>
+				   <span id="rangeValue">150</span>
+			   </div>
+
+			   <div class="photo">
+				   <p>7. Какой цвет Вы выберете в качестве основы<br>для дизайна интерьера нашего ресторана?</p>
+				   <input type="color" id="favcolor" name="favcolor" value=""><br><br>
+			   </div>
+			   <div class = "offer">
+				   <p>8.Если у вас есть предложения по улучшению сервиса<br> нашего супермакета, напишите их в текствое поле ниже:</p>
+				   <textarea maxlength = "500" rows = "10" cols = "60" name = "comment" id = "comment"></textarea>
+			   </div>
+
+
+              <p><input type="submit" name="button1" value="Отправить" class="b1" >
+              <input type="button" name="button2" value="Очистить" class="b2" onclick="this.form.reset();"></p>
+          </form>
+
+        </article>
+		<nav >
+			<ul class="menu">
+				<li class="forli">Меню</li>
+				<li class="forli">Доставка</li>
+				<li class="forli">Специальные предложения</li>
+				<li class="forli">Отзывы</li>
+				<li class="forli">Контакты</li>
+			</ul>
+		</nav>
+        <aside>
+			<div class="sale">
+         		<img src="../resources/vid.jpg" alt="sale" >
+		 	</div>
+        </aside>
+
+    </div>
+</body>  
+  
+<footer>
+	<p class="help">Доставка заказов по телефону:<br>(8033) 377-09-65</p>
+  	<p class="cop">&copy;2021 By Anna Bubnovich</p>
+	<div class="img">
+		<img src="../resources/im1.jpg" alt="корзина">
+  	</div>
+</footer>
